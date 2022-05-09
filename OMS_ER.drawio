@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-09T10:59:23.844Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="YF6TkiwF-z70zB2ixG3F" version="18.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-09T11:00:51.933Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="LS0QSP7ujVKe5xi-FfGY" version="18.0.2" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="2272" dy="1762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -1608,7 +1608,7 @@
         <mxCell id="ena7NFAM1gsml_QfiWPr-230" value="操作表我设想是需要记录用户操作日志的表都建立一张对应操作表，然后通过传入实体类反射获取属性上的注解信息，和一些特殊处理的属性，比如user_id需要转成用户名，就可以得到更新前后的数据变化情况，同时可以保存此次操作的审核情况" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.roundRectCallout;dx=30;dy=15;size=5;boundedLbl=1;" vertex="1" parent="1">
           <mxGeometry x="1400" y="200" width="245" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="ena7NFAM1gsml_QfiWPr-304" value="这张表设计的原因是因为以前黑云那里有很多地方会出现没有直接关联的情况要数据，比如合同没有与工单关联，却要合同下看工单的信息，或者合同模块下要看到所有的操作日志，所以就想建立这张表方便查询，但这张表可能会增加耦合性和加大维护难度。不知道有没有必要加？" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.roundRectCallout;dx=30;dy=15;size=5;boundedLbl=1;" vertex="1" parent="1">
+        <mxCell id="ena7NFAM1gsml_QfiWPr-304" value="这张表设计的原因是因为以前黑云那里有很多地方会出现没有直接关联却要间接数据的情况，比如合同没有与工单关联，却要合同下看工单的信息，或者合同模块下要看到所有的操作日志，所以就想建立这张表方便查询，但这张表可能会增加耦合性和加大维护难度。不知道有没有必要加？" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.roundRectCallout;dx=30;dy=15;size=5;boundedLbl=1;" vertex="1" parent="1">
           <mxGeometry x="1040" y="630" width="300" height="170" as="geometry" />
         </mxCell>
         <mxCell id="ena7NFAM1gsml_QfiWPr-313" value="confirm_sign 是用来判断是否待确认的状态，如果合同变更，通过后订单无感知变更，这个标记就没作用，这个要讨论下" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.rectCallout;dx=30;dy=15;boundedLbl=1;" vertex="1" parent="1">
